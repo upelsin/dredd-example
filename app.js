@@ -11,7 +11,7 @@ app = express();
 app.use(bodyParser.json());
 
 // setup Mongo connection
-app.use(expressMongoDb('mongodb://localhost/dredd-example'));
+app.use(expressMongoDb('mongodb://172.17.0.2/dredd-example'));
 
 // return HAL by default
 app.use((req, res, next) => {
